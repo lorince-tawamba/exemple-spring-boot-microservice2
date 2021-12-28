@@ -1,0 +1,12 @@
+# =================================
+# SERVICE CONFIGURATION
+# =================================
+spring:
+  application:
+    name: exemple-spring-boot-microservice2
+  config:
+    import: optional:configserver:http://localhost:8888
+  profiles:
+    active: prod
+
+
